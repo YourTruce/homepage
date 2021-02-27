@@ -8,193 +8,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./assets/styles/app.css">
 
-    <style>
-        *{
-            color: #453748;
-        }
-        .navbar{
-            height: 120px;
-        }
-
-        .navbar-brand img{
-            height: 40px;
-        }
-
-        .ml-32px{
-            margin-left: 40px;
-        }
-
-        .mt-120px{
-            margin-top: 120px;
-        }
-
-        .pt-120px{
-            padding-top: 120px;
-        }
-
-        .fw-300{
-            font-weight: 300;
-        }
-
-        .clear{
-            clear: both;
-        }
-
-        .navbar-expand-lg .navbar-nav .nav-link{
-            padding-right: .5rem;
-            padding-left: .5rem; 
-            font-weight: 600;
-        }
-
-        .navbar-expand-lg .navbar-nav .nav-item + .nav-item{
-            margin-left: 40px;
-        }
-
-        .navbar-expand-lg .navbar-nav .nav-link.active{
-            border-bottom: 4px solid #5de7f2;
-        }
-
-        .btn.launch-btn{
-            background-color: #9755fb;
-            border-radius: 16px;
-            color: white;
-            padding-left:40px;
-            padding-right:40px;
-        }
-
-        .btn.launch-btn.green{
-            background-color: #136d50;
-        }
-
-        .btn.launch-btn-o{
-            border: 1px solid #9755fb;
-            color: #9755fb;
-            padding-left:40px;
-            padding-right:40px;
-            border-radius: 16px;
-        }
-
-        .btn.big{
-            min-width: 320px;
-            line-height: 54px;
-            font-size: 18px;
-        }
-
-        .tx-color{
-            color: #ffffff;
-        }
-
-        .p-color{
-            color: #dcfff4;
-        }
-
-        .a-color{
-            color: #a7a7a7;
-        }
-
-        section.first{
-            height: calc(100vh - 120px);
-        }
-
-        section.second, section.third, section.fourth{
-            height: 100vh;
-            position: relative;
-        }
-
-        .app-left{
-            position: relative;
-        }
-
-        .app-left::before{
-            position: absolute;
-            content: "";
-            background-color: #27a27a;
-            top:0;
-            width: 50%;
-            height: 100vh;
-            z-index: -1;
-        }
-
-        .right-23::before{
-            position: absolute;
-            content: "";
-            background-color: #27a27a;
-            top:0;
-            right: 0;
-            width: 40%;
-            height: 100vh;
-            z-index: -1;
-        }
-
-        .right-23.left::before{
-            left: 0 !important;
-        }
-
-        img{
-            max-width: 100%;
-        }
-
-        h3.heading{
-            font-size: 36px;
-            /* color: #9755fb; */
-        }
-
-        footer{
-            padding: 40px 0;
-        }
-
-        footer h4.heading{
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-
-        .links{
-            display: block;
-            text-decoration: none;
-            color: #a7a7a7;
-            font-size: 14px;
-        }
-
-        .links + .links{
-            margin-top: 8px;
-        }
-
-        .small{
-            font-size: 14px;
-        }
-
-
-        .tabs{
-            background-color: #f2f5f6;
-            display: inline-block;
-            border-radius: 20px;
-            padding: 8px;
-        }
-
-        .tabs .tab{
-            padding: 10px 40px;
-            display: inline-block;
-            cursor: pointer;
-            color: #8e9aa9;
-            font-size: 20px;
-        }
-
-        .tabs .tab.active{
-            background-color: #fefefe;
-            color: #55595e;
-            border-radius: 20px;
-            box-shadow: 0px 0px 4px 0px #88888861;
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>YourTruce - Homepage</title>
   </head>
   <body>
-      <div class="app-left"></div>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-sm-green-st">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="">
+                <img src="./assets/img/logo-invert.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -202,19 +26,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-32px">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="https://t.me/yourtruceofficial" target="_blank">Telegram</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Login</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <div class="btn launch-btn">Launch App</div>
                     </li>
@@ -223,32 +47,41 @@
         </div>
     </nav>
 
-    <section class="first">
-        <div class="app"></div>
+    <section class="first app-left">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-5">
-                    <div>
-                        <br><br><br><br>
-                        <h1 class="tx-color">Your true commerce</h1>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 col-md-5 col-sm-12" style="position: relative;">
+                   
+                    <div class="bg-sm-green">
+                        <br>
+                        <div class="poster">
+                            <img src="./assets/img/walking.svg" alt="">
+                        </div>
                         <br><br>
-                        <p class="p-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam sapiente, sequi vero nemo ullam minima numquam animi quibusdam accusantium, amet fugiat vel excepturi, mollitia commodi officia cupiditate aliquam iure.</p>
-
-                        <br><br>
-                        <div class="btn launch-btn green big">Get Started</div>
+                        <h1 class="tx-color">A simple "Follow" can make you a crypto trader!</h1>
+                        <br>
+                        <p class="p-color">Imagine a platform that gives you an ability to become a cryptotrader in just one click! That is precisely what YourTruce does. 
+                            <!-- If you are new to trading, come down to YourTruce platform, check out the top traders from the interactive dashboard and follow them. Now, you are a cryptotrader too. -->
+                            </p>
+                        <br>
+                        <a class="btn launch-btn green big" href="./coming-soon.html" target="_blank">Get Started</a>
+                        <br>
                     </div>
                 </div>
-                <div class="col-5">
-                    <div class="poster">
-                        <img src="./assets/img/community.jpg" alt="">
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos distinctio, dignissimos similique asperiores voluptate itaque voluptatibus dolorem eaque hic ullam nobis quasi modi deserunt consectetur sequi fugiat reprehenderit sunt.
-                    </p>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="pt-4">
+                        <h2>Welcome to YourTruce Telegram Community!</h2>
+                        <br>
+                        <p>
+                            Welcome to YourTruce tribe, a place that allows you to converse multi-dimensionally, because we believe in transparency. This will be a community that encourages you to share views, discuss topics and suggest product feedback.
+                            ( @yourtruceofficial )
+                        </p>
 
-                    <br><br>
-                    <div class="text-center">
-                        <div class="btn launch-btn-o big">Join Community</div>
+                        <br><br>
+                        <div class="text-center">
+                            <a class="btn launch-btn-o big" href="https://t.me/yourtruceofficial" target="_blank">Join Community</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -259,27 +92,118 @@
     <section class="second pt-120px">
         <div class="right-23"></div>
         <div class="container">
-            <div class="tabs">
-                <div class="tab active">About</div>
-                <div class="tab">Benefits</div>
-                <div class="tab">Trader vs Investors</div>
+            <div class="tcontain">
+                <div class="tabs">
+                    <div class="tab active" tab="ytt-about">About</div>
+                    <div class="tab"  tab="ytt-benefits">Benefits</div>
+                    <div class="tab"  tab="ytt-trader">Trader & Follower</div>
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-8">
-                    <img src="./assets/img/about.jpg" alt="">
-                </div>
-                <div class="col-4">
-                    <div class="pt-120px">
-                        <h3 class="heading p-color">YourTruce a new begining</h3>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 pr-vw">
+                    <div class="mt-4 ytt-about">
+                         <img src="./assets/img/bear.svg" alt="">
+                    </div>
+                    <div class="mt-4 d-none ytt-benefits">
+                        <div class="card">
+                           <div class="card-body flex">
+                               <div class="img-icon">
+                                    <img src="./assets/img/stock-market-2.svg" alt="">
+                               </div>
+                               <div class="c-120px">YourTruce is powered by  decentralised trading platform, making it hard to manipulate.</div>
+                           </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                           <div class="card-body flex">
+                               <div class="img-icon">
+                                    <img src="./assets/img/jail.svg" alt="">
+                               </div>
+                               <div class="c-120px">YourTruce allows non-custodial transactions and no need to transfer assets to the platform.</div>
+                           </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                           <div class="card-body flex">
+                               <div class="img-icon">
+                                    <img src="./assets/img/transparency.svg" alt="">
+                               </div>
+                               <div class="c-120px"> Offers transparent data of trading activity, keeps followers away from fraud, powered by smart-contract that enables a secure trading environment. </div>
+                           </div>
+                        </div>
                         <br><br>
-                        <p class="fw-300 p-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo culpa fuga tenetur quasi nihil mollitia cupiditate quo quisquam autem. Itaque eius corrupti nisi nihil deleniti quam vero tempora nesciunt.
-                        </p>
+                    </div>
+                    <div class="mt-4 d-none ytt-trader">
                         <br><br>
                         <div class="text-center">
-                        <div class="btn launch-btn green big">Launch App</div>
+                            <img src="./assets/img/deal.svg" class="h-30vh" width="412" alt="">
+                        </div>
+                        <br><br>
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 col-md-6 col-sm-5 col-xs-5 pt-4">
+                                <h4>Follower</h4>
+                                <div>
+                                    Potential to earn - Traders earn commision on every successful trade.
+                                </div>
+                                <br>
+                                <div>Friendly Tokenization - Traders get to compound their holding via tokenization of the pool.</div>
+                    
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-5 col-xs-5 pt-4">
+                                <h4>Trader</h4>
+                                <div>
+                                    Risk-free copy trading - Risk is optimized as Follower holds the token of the pool and that means follower gets that much share of the pool.
+                                </div>
+                                <br>
+                                <div>Zero charge - In case of loss, nothing will be charged by the trader or YourTruce platform.</div>
+                            </div>
+                        </div>
+                        <br><br>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <div class="bg-sm-green">
+                        <div class="ps-4 pt-4">
+                            <div class="ytt-about">
+                                <h3 class="heading p-color">About YourTruce</h3>
+                                <br>
+                                <p class="fw-300 p-color">
+                                    YourTruce is a complete decentralised solution that offers a secure and transparent place for trading to happen. And this allows the followers to copy trade the cryptocurrency traders. Our vision is to make trading simple and profitable for novice traders and also benefit successful traders through a rewarding trading experience.
+                                </p>
+                                <br>
+                                <div>
+                                    <a class="btn launch-btn green big" href="./coming-soon.html" target="_blank">Launch App</a>
+                                </div>
+                                <br><br>
+                            </div>
+
+                            <div class="d-none ytt-benefits">
+                                <h3 class="heading p-color">Benefits of YourTruce</h3>
+                                <br>
+                                <div class="fw-300 p-color fs-20px">
+                                   YourTruce has identified what will be the ideal scenario for any pro and a novice trader / Follower
+                                    <br> <br>
+                                  
+                                </div>
+                                <br>
+                                <div>
+                                    <a class="btn launch-btn green big" href="./coming-soon.html" target="_blank">Launch App</a>
+                                </div>
+                            </div>
+
+
+                            <div class="d-none ytt-trader">
+                                <h3 class="heading p-color">Traders and Followers</h3>
+                                <br>
+                                <p class="p-color">YourTruce balance both Traders and Followers together in a single platform.</p>
+                               
+                                <br><br>
+                                <div>
+                                    <a class="btn launch-btn green big" href="./coming-soon.html" target="_blank">Launch App</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -291,33 +215,82 @@
     <section class="third pt-120px">
         <div class="right-23 left"></div>
         <div class="container">
-            <div class="float-end">
+            <div class="float-end tcontain">
                 <div class="tabs">
-                    <div class="tab active">About</div>
-                    <div class="tab">Benefits</div>
-                    <div class="tab">Trader vs Investors</div>
+                    <div class="tab active" tab="com-about">About</div>
+                    <div class="tab" tab="com-benefits">Benefits</div>
+                    <!-- <div class="tab">Trader & Follower</div> -->
                 </div>
             </div>
 
             <div class="clear"></div>
 
-            <div class="row">
-                <div class="col-4">
-                    <div class="pt-120px">
-                        <h3 class="heading p-color">YourTruce a new begining</h3>
-                        <br><br>
-                        <p class="fw-300 p-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo culpa fuga tenetur quasi nihil mollitia cupiditate quo quisquam autem. Itaque eius corrupti nisi nihil deleniti quam vero tempora nesciunt.
-                        </p>
-                        <br><br>
-                        <div class="text-center">
-                        <div class="btn launch-btn green big">Launch App</div>
-                    </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 order-2 order-sm-2 order-md-1 order-lg-1">
+                    <div class="bg-sm-green">
+                        <div class="pe-4 pt-4">
+                            <div class="com-about">
+                                <h3 class="heading p-color">About Community</h3>
+                                <br>
+                                <p class="fw-300 p-color">
+                                    If you are a trader or a follower, YourTruce Telegram community allows you to initiate and discuss various topics ranging from hot cryto trading, market trends to updates about YourTruce. As a pro-trader, your share path breaking suggestions and feedback will help YourTruce grow along with you.
+                                </p>
+                                <br>
+                                <div>
+                                    <div class="btn launch-btn green big">Join Community</div>
+                                </div>
+                                <br><br>
+                            </div>
+
+                            <div class="d-none com-benefits">
+                                <h3 class="heading p-color">Benefits of Community</h3>
+                                <br>
+                                <p class="fw-300 p-color">
+                                    Why should you be a part of YourTruce Telegram Community? 
+                                    <br><br>
+                                    We know that being a part of a community means investing some time in the product and also involving oneself into conversations and discussions.
+                                </p>
+                                <br>
+                                <div>
+                                    <div class="btn launch-btn green big">Join Community</div>
+                                </div>
+                                <br><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-8">
-                    <div class="float-end">
-                        <img src="./assets/img/about.jpg" alt="">
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 order-1 order-sm-1 order-md-2 order-lg-2 pl-5vw">
+                    <div class="mt-4 ms-4 text-right com-about">
+                        <img src="./assets/img/community-2.svg" alt="">
+                    </div>
+                    <div class="mt-4 d-none com-benefits">
+                        <div class="card">
+                           <div class="card-body flex">
+                               <div class="img-icon">
+                                    <img src="./assets/img/feedback.svg" alt="">
+                               </div>
+                               <div class="c-120px">1. Transparent and Intrusion free discussion - Learn, suggest and share feedback about crypto trading and market trends.</div>
+                           </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                           <div class="card-body flex">
+                               <div class="img-icon">
+                                    <img src="./assets/img/podium.svg" alt="">
+                               </div>
+                               <div class="c-120px">2. Rewarding Participation - Get recognised, featured and rewarded for being the active community member and generating valuable conversations.</div>
+                           </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                           <div class="card-body flex">
+                               <div class="img-icon">
+                                    <img src="./assets/img/affiliate-marketing.svg" alt="">
+                               </div>
+                               <div class="c-120px"> 3. Feel Belonged - YourTruce tries to give it a humane touch by listening to suggestions and reviews about the product to get things better.</div>
+                           </div>
+                        </div>
+                        <br><br>
                     </div>
                 </div>
             </div>
@@ -327,27 +300,55 @@
     <section class="fourth pt-120px">
         <div class="right-23"></div>
         <div class="container">
-            <div class="tabs">
-                <div class="tab active">About</div>
-                <div class="tab">Benefits</div>
-                <div class="tab">Trader vs Investors</div>
+            <div class="tcontain">
+                <div class="tabs">
+                    <div class="tab active" tab="whitepaper">Whitepaper</div>
+                    <!-- <div class="tab" tab="blog">Blog</div>
+                    <div class="tab" tab="news">News</div> -->
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-8">
-                    <img src="./assets/img/about.jpg" alt="">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                    <img src="./assets/img/whitepaper.svg" alt="">
                 </div>
-                <div class="col-4">
-                    <div class="pt-120px">
-                        <h3 class="heading p-color">YourTruce a new begining</h3>
-                        <br><br>
-                        <p class="fw-300 p-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo culpa fuga tenetur quasi nihil mollitia cupiditate quo quisquam autem. Itaque eius corrupti nisi nihil deleniti quam vero tempora nesciunt.
-                        </p>
-                        <br><br>
-                        <div class="text-center">
-                        <div class="btn launch-btn green big">Launch App</div>
-                    </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <div class="bg-sm-green">
+                        <div class="ps-4 pt-4">
+                            <div id="whitepaper">
+                                <h3 class="heading p-color">Whitepaper</h3>
+                                <br>
+                                <p class="fw-300 p-color">
+                                    Does YourTruce sound interesting and meets the demand of the traders? Know how YourTruce is designed, conceptualized and helps the trader community. You will also get to know the benefits of trading on YourTruce, how trading complies with the crypto market standards and how it is safe, transparent and user-friendly by downloading this Whitepaper. 
+                                </p>
+                                <br>
+                                <a href="./YourTruce-WP.pdf" class="btn launch-btn green big">Read More</a>
+                                <br><br>
+                            </div>
+                            <div id="blog" class="d-none">
+                                <h3 class="heading p-color">Blog</h3>
+                                <br><br>
+                                <p class="fw-300 p-color">
+                                    Coming Soon
+                                </p>
+                                <br><br>
+                                <div class="text-center">
+                                <!-- <div class="btn launch-btn green big">Read More</div> -->
+                                </div>
+                            </div>
+                             <div id="news" class="d-none">
+                                <h3 class="heading p-color">News</h3>
+                                <br><br>
+                                <p class="fw-300 p-color">
+                                    Coming Soon
+                                </p>
+                                <br><br>
+                                <div class="text-center">
+                                <!-- <div class="btn launch-btn green big">Read More</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -355,64 +356,74 @@
     </section>
 
 
-    <br><br>
-
     <footer>
         <div class="container pt-4 pb-4">
             <div class="row justify-content-between">
-                <div class="col-2">
-                    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="">
+                <div class="col-lg-2 col-md-12">
+                    <img src="./assets/img/logo.png" alt="">
 
                     <br><br><br>
 
-                    <p class="a-color small">© 2021 1inch Limited, Inc. <br> Dark Mode:</p>
+                    <p class="a-color small">Yours truely - YourTruce</p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6 col-md-8">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-4">
                             <h4 class="heading">Products</h4>
                             
-                            <a href="" class="links">Products</a>
-                            <a href="" class="links">Pricing</a>
-                            <a href="" class="links">Login</a>
+                            <a href="" class="links">Traders</a>
+                            <a href="" class="links">Followers</a>
+                            <a href="" class="links">Vault</a>
                         </div>
-                         <div class="col-4">
+                         <div class="col-lg-4 col-md-4">
                             <h4 class="heading">About Us</h4>
                             
                             <a href="" class="links">YourTruce</a>
-                            <a href="" class="links">Contact Us</a>
-                            <a href="" class="links">Features</a>
+                            <a href="" class="links">Community</a>
                         </div>
-                         <div class="col-4">
-                            <h4 class="heading">Resources</h4>
+                         <div class="col-lg-4 col-md-4">
+                            <h4 class="heading">Social Links</h4>
                             
-                            <a href="" class="links">Help center</a>
-                            <a href="" class="links">Book a demo</a>
-                            <a href="" class="links">Server status</a>
+                            <a href="" class="links">Twitter</a>
+                            <a href="" class="links">Github</a>
+                            <a href="" class="links">Telegram</a>
+                            <a href="" class="links">Medium</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-md-4">
                     <h4 class="heading">Get in touch</h4>
                     
-                    <a href="" class="links">Question a feedback?</a>
-                    <a href="" class="links">We'd love to hear from you</a>
+                    <a href="" class="links">Write a mail for collab</a>
+                    <a href="" class="links">Download Whitepaper</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        $(".tab").on("click", function(event){
+            var parent = $(this).parent();
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+            parent.find(".active").removeClass("active");
+            $(this).addClass("active");
+
+            var id = $(this).attr("tab");
+            
+            var ids = [];
+            var tabs = parent.find(".tab");
+            for(var i = 0; i< tabs.length; i++){
+                _id = $(tabs[i]).attr("tab");
+                $("."+_id).addClass("d-none");
+            }
+
+            console.log(id);
+
+            $("."+id).removeClass("d-none");
+        });
+    </script>
   </body>
 </html>
